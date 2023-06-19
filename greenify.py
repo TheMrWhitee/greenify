@@ -17,6 +17,7 @@ def add_commit():
     with open('commits.txt', 'a') as commits:
         commits.write('commit\n')
 
+    repo.git.commit('next commit')
     repo.git.push()
 
 
