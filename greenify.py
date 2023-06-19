@@ -2,6 +2,8 @@ import os
 
 
 def add_commit():
+    os.system('git pull')
+
     with open('commits.txt', 'a') as commits:
         commits.write('commit\n')
 
